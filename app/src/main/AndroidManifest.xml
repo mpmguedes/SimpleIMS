@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        READ_PHONE_STATE is required by CarrierConfigManager.getConfigForSubId()
+        to read the per-subscription config *before* the config is overridden.
+        The actual privileged write does not run with this permission: it runs
+        under the Shizuku shell identity with NETWORK_SETTINGS delegated
+        (see ImsConfigHelper / PrivilegedProcess). Declaring it here only makes
+        the read side legal on Android 12+, where the previous build relied on
+        the minSdk-33 baseline silently.
+    -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:label="SimpleIMS"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@android:style/Theme.DeviceDefault.DayNight">
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="SimpleIMS" />
+
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false"
+            android:label="@string/about_title" />
+
+        <provider
+            android:name=".ShizukuProvider"
+            android:authorities="${applicationId}.shizuku"
+            android:exported="true"
+            android:multiprocess="false"
+            android:permission="android.permission.NETWORK_SETTINGS" />
+    </application>
+
+    <instrumentation
+        android:name="io.github.vvb2060.ims.PrivilegedProcess"
+        android:targetPackage="${applicationId}"
+        android:label="IMS Configurator" />
+
+</manifest>

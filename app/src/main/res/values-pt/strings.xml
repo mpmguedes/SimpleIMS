@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SimpleIMS</string>
+    <string name="for_pixel">para Android 12+</string>
+
+    <!-- Main Screen -->
+    <string name="title">Configuração SimpleIMS</string>
+    <string name="system_info">Informação do Sistema</string>
+    <string name="android_version">Versão do Android: %s</string>
+    <string name="shizuku_status">Estado do Shizuku: %s</string>
+    <string name="shizuku_ready">✅ Pronto</string>
+    <string name="shizuku_not_running">❌ Não está a correr</string>
+    <string name="shizuku_no_permission">⚠️ Sem permissão</string>
+
+    <!-- Warning -->
+    <string name="qpr2_beta3_warning">⚠️ AVISO: o Android 16 QPR2 Beta 3+ restringe a configuração persistente. As definições voltam ao estado inicial após o reinício e têm de ser aplicadas novamente.</string>
+    <string name="min_api_warning">Requer Android 12 (API 31) ou superior.</string>
+
+    <!-- About / fork notice -->
+    <string name="about_title">Sobre</string>
+    <string name="about_summary">O SimpleIMS é um fork do TurboIMS que funciona em Android 12 (API 31) ou superior.</string>
+    <string name="about_origin">Projeto original: TurboIMS\nPor Turbo1123 (upstream) / vvb2060 (mecanismo)\nhttps://github.com/Turbo1123/TurboIMS</string>
+    <string name="about_fork_note">Este fork mantém o mecanismo e o conjunto de funcionalidades originais, adiciona compatibilidade com a API 31 e inclui uma identidade renomeada, um novo logótipo e esta página Sobre.</string>
+    <string name="version_format">v%1$s (Compilação %2$d)</string>
+
+    <!-- Features -->
+    <string name="features_config">Configuração das Funcionalidades</string>
+    <string name="volte">VoLTE (Voz 4G)</string>
+    <string name="volte_desc">Ativar chamadas de voz HD em 4G</string>
+    <string name="vowifi">VoWiFi (Chamadas WiFi)</string>
+    <string name="vowifi_desc">Ativar chamadas através de WiFi</string>
+    <string name="vt">VT (Videochamada)</string>
+    <string name="vt_desc">Ativar a funcionalidade de videochamada</string>
+    <string name="vonr">VoNR (Voz 5G)</string>
+    <string name="vonr_desc">Ativar chamadas de voz HD em 5G</string>
+    <string name="vonr_unsupported_desc">Não suportado nesta versão do Android (requer Android 13 ou superior)</string>
+    <string name="cross_sim">Chamadas Cross-SIM</string>
+    <string name="cross_sim_desc">Interligação entre os dois cartões SIM</string>
+    <string name="ut">Serviços Suplementares UT</string>
+    <string name="ut_desc">Reencaminhamento, chamada em espera, etc.</string>
+    <string name="_5g_nr">5G NR (NSA/SA)</string>
+    <string name="_5g_nr_desc">Ativar a rede 5G (Não autónoma / Autónoma)</string>
+
+    <!-- Button -->
+    <string name="apply_config">Aplicar Configuração</string>
+
+    <!-- Tips -->
+    <string name="tips">Dicas:\n• O Shizuku tem de estar iniciado e autorizado primeiro\n• A configuração aplica-se a todos os cartões SIM ativos\n• O Android 16 QPR2 Beta 3+ requer nova aplicação após o reinício</string>
+
+    <!-- Messages -->
+    <string name="shizuku_not_running_msg">O Shizuku não está a correr. Inicie o Shizuku primeiro.</string>
+    <string name="shizuku_no_permission_msg">Conceda a permissão ao Shizuku</string>
+    <string name="config_applied">Configuração aplicada com sucesso!</string>
+    <string name="config_failed">A configuração falhou: %s</string>
+    <string name="applying_config">A aplicar…</string>
+    <string name="applying_config_restart">A aplicar… a aplicação vai fechar e reabrir. Abra-a novamente para ver o resultado.</string>
+    <string name="config_failed_title">A configuração não foi aplicada</string>
+    <string name="config_failed_detail">Não foi possível escrever a configuração da operadora.\n\nMotivo: %1$s\n\nVerifique se o Shizuku está a correr e autorizado e se existe um cartão SIM ativo.</string>
+    <string name="update_shizuku">Atualize o Shizuku para a versão mais recente</string>
+
+    <!-- Language -->
+    <string name="language">Idioma</string>
+    <!-- Placeholder only: the label is replaced at runtime by the next language name. -->
+    <string name="switch_language">Português</string>
+
+    <!-- SIM Card -->
+    <string name="select_sim">Selecionar Cartão SIM</string>
+    <string name="sim_card">Cartão SIM</string>
+    <string name="no_sim_found">Nenhum cartão SIM ativo encontrado</string>
+    <string name="sim_1">SIM 1</string>
+    <string name="sim_2">SIM 2</string>
+    <string name="sim_2_unavailable">O SIM 2 não está disponível</string>
+    <string name="sim_subid_format">Subscrição %d</string>
+    <string name="apply_to_all_sims">Aplicar a Todos os SIM</string>
+    <string name="apply_to_sim_1">Aplicar ao SIM 1</string>
+    <string name="apply_to_sim_2">Aplicar ao SIM 2</string>
+    <string name="apply_to_all">Aplicar a Todos</string>
+    <string name="config_applied_to_all">Configuração aplicada a todos os cartões SIM!</string>
+
+    <!-- Network Settings -->
+    <string name="go_to_network_settings">Ir para as Definições de Rede</string>
+    <string name="config_success_message">Configuração aplicada com sucesso! Deseja ir para as definições de rede?</string>
+    <string name="later">Mais tarde</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SimpleIMS launcher foreground: a SIM card with three ascending signal bars
+    cut out of it (evenOdd fill), so the launcher's own background shows through.
+    The glyph is kept inside the 66dp safe circle (centre 54,54 - radius 33) so
+    circular icon masks do not clip the corners.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M40,32 H66 L76,42 V68 A8,8 0 0 1 68,76 H40 A8,8 0 0 1 32,68 V40 A8,8 0 0 1 40,32 Z
+        M42,56 H45 A2,2 0 0 1 47,58 V62 A2,2 0 0 1 45,64 H42 A2,2 0 0 1 40,62 V58 A2,2 0 0 1 42,56 Z
+        M53,50 H56 A2,2 0 0 1 58,52 V62 A2,2 0 0 1 56,64 H53 A2,2 0 0 1 51,62 V52 A2,2 0 0 1 53,50 Z
+        M64,44 H67 A2,2 0 0 1 69,46 V62 A2,2 0 0 1 67,64 H64 A2,2 0 0 1 62,62 V46 A2,2 0 0 1 64,44 Z" />
+</vector>
